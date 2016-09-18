@@ -1,18 +1,16 @@
-var SandwichMaker = (function(newSandwich){
-	var cheese = {
+var SandwichMaker = (function(cheeseChoice){
+	var cheesePrice = {
 		"mozzarella": 1.60, 
 		"swiss": 1.70, 
 		"provolone": 1.80, 
 		"american": 1.5
 	};
 
-	newSandwich.getNewCheese = function() {
-		return cheese;
-	};
-	newSandwich.setNewCheese = function(newCheese) {
-		cheese.push(newCheese);
+	cheeseChoice.addCheese = function(cheeseOption) {
+		var cheeseOptionPrice = cheesePrice[cheeseOption];
+		SandwichMaker.addTopping(cheeseOptionPrice);
 	};
 
-	return newSandwich;
+	return cheeseChoice;
 
 })(SandwichMaker || {});

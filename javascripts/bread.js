@@ -1,18 +1,16 @@
-var SandwichMaker = (function(newSandwich){
-	var bread = {
+var SandwichMaker = (function(breadChoice){
+	var breadPrice = {
 		"white": 1.00, 
 		"wheat": 1.10, 
 		"rye": 1.20, 
-		"ciabatta": 1.3
+		"ciabatta": 1.30
 	};
 
-	newSandwich.getNewBread = function() {
-		return bread;
-	};
-	newSandwich.setNewBread = function(newBread) {
-		bread.push(newBread);
+	breadChoice.addBread = function(breadOption) {
+		var breadOptionPrice = breadPrice[breadOption];
+		SandwichMaker.addTopping(breadOptionPrice);
 	};
 
-	return newSandwich;
+	return breadChoice;
 
 })(SandwichMaker || {});
