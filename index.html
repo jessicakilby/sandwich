@@ -6,43 +6,48 @@
 </head>
 <body>
 
-<fieldset id="bread">
-	<legend>Bread: </legend></br>
-	<label>white<input type="checkbox" name="" value="white"></label></br>
-	<label>wheat<input type="checkbox" name="" value="wheat"></label></br>
-	<label>rye<input type="checkbox" name="" value="rye"></label></br>
-	<label>ciabatta<input type="checkbox" name="" value="ciabatta"></label></br>	
-</fieldset>
-<fieldset id="meat">
-	<legend>Meat: </legend></br>
-	<label>ham<input type="checkbox" name="" value="ham"></label></br>
-	<label>turkey<input type="checkbox" name="" value="turkey"></label></br>
-	<label>roast<input type="checkbox" name="" value="roast"></label></br>
-	<label>bacon<input type="checkbox" name="" value="bacon"></label></br>	
-</fieldset>
-<fieldset id="cheese">
-	<legend>Cheese: </legend></br>
-	<label>mozzarella<input type="checkbox" name="" value="mozzarella"></label></br>
-	<label>swiss<input type="checkbox" name="" value="swiss"></label></br>
-	<label>provolone<input type="checkbox" name="" value="provolone"></label></br>
-	<label>american<input type="checkbox" name="" value="american"></label></br>	
-</fieldset>
-<fieldset id="condiments">
-	<legend>Condiments: </legend></br>
-	<label>mayonnaise<input type="checkbox" name="" value="mayonnaise"></label></br>
-	<label>ketchup<input type="checkbox" name="" value="ketchup"></label></br>
-	<label>mustard<input type="checkbox" name="" value="mustard"></label></br>
-	<label>BBQ<input type="checkbox" name="" value="BBQ"></label></br>
-</fieldset>
-<fieldset id="veggies">
-	<legend>Veggies: </legend></br>
-	<label>lettuce<input type="checkbox" name="" value="lettuce"></label></br>
-	<label>tomato<input type="checkbox" name="" value="tomato"></label></br>
-	<label>onion<input type="checkbox" name="" value="onion"></label></br>
-	<label>pickle<input type="checkbox" name="" value="pickle"></label></br>
-</fieldset>
-<div id="final">
-	
+<div id="container">
+	<p>Checkout: </p>
+	<div id="output"></div>
+	<button type="submit" id="submitButton" class="btn">Place Your Order</button>
+</div>
+
+<div id="fieldsetContainer">
+	<fieldset id="bread">
+		<legend>Bread: </legend>
+		<label>white<input type="checkbox" name="" value="white"></label>
+		<label>wheat<input type="checkbox" name="" value="wheat"></label>
+		<label>rye<input type="checkbox" name="" value="rye"></label>
+		<label>ciabatta<input type="checkbox" name="" value="ciabatta"></label>	
+	</fieldset>
+	<fieldset id="meat">
+		<legend>Meat: </legend>
+		<label>ham<input type="checkbox" name="" value="ham"></label>
+		<label>turkey<input type="checkbox" name="" value="turkey"></label>
+		<label>roast<input type="checkbox" name="" value="roast"></label>
+		<label>bacon<input type="checkbox" name="" value="bacon"></label>	
+	</fieldset>
+	<fieldset id="cheese">
+		<legend>Cheese: </legend>
+		<label>mozzarella<input type="checkbox" name="" value="mozzarella"></label>
+		<label>swiss<input type="checkbox" name="" value="swiss"></label>
+		<label>provolone<input type="checkbox" name="" value="provolone"></label>
+		<label>american<input type="checkbox" name="" value="american"></label>	
+	</fieldset>
+	<fieldset id="condiments">
+		<legend>Condiments: </legend>
+		<label>mayonnaise<input type="checkbox" name="" value="mayonnaise"></label>
+		<label>ketchup<input type="checkbox" name="" value="ketchup"></label>
+		<label>mustard<input type="checkbox" name="" value="mustard"></label>
+		<label>BBQ<input type="checkbox" name="" value="BBQ"></label>
+	</fieldset>
+	<fieldset id="veggies">
+		<legend>Veggies: </legend>
+		<label>lettuce<input type="checkbox" name="" value="lettuce"></label>
+		<label>tomato<input type="checkbox" name="" value="tomato"></label>
+		<label>onion<input type="checkbox" name="" value="onion"></label>
+		<label>pickle<input type="checkbox" name="" value="pickle"></label>
+	</fieldset>
 </div>
 
 <script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
